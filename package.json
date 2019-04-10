@@ -2,9 +2,20 @@
   "name": "mob-tcp-server",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "server.js",
+  "directories": {
+    "lib": "lib",
+    "test": "test"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "eslint": "^5.16.0",
+    "jest": "^24.7.1"
+  },
   "scripts": {
-    "start": "node lib/index.js"
+    "test": "jest",
+    "test:watch": "npm run test -- --watch",
+    "start": "node server.js"
   },
   "repository": {
     "type": "git",
@@ -16,9 +27,5 @@
   "bugs": {
     "url": "https://github.com/maybeemily/mob-tcp-server/issues"
   },
-  "homepage": "https://github.com/maybeemily/mob-tcp-server#readme",
-  "devDependencies": {
-    "eslint": "^5.16.0",
-    "jest": "^24.7.1"
-  }
+  "homepage": "https://github.com/maybeemily/mob-tcp-server#readme"
 }
